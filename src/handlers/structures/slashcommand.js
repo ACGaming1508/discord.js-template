@@ -29,7 +29,7 @@ module.exports = (client) => {
 		try {
 
 			await rest.put(
-				Routes.applicationGuildCommands(config.ClientConfig.id, '897789879059099690'),
+				Routes.applicationCommands(config.ClientConfig.id),
 				{ body: SlashCommands },
 			);
 
