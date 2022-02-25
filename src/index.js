@@ -39,7 +39,6 @@ client.setMaxListeners(100);
 require('events').defaultMaxListeners = 100;
 
 ['Emotes', 'colors'].forEach(x => client[x.toLowerCase()] = config[x]);
-['commands'].forEach(x => client[x] = new Discord.Collection());
 ['slashcommand', 'command', 'event'].forEach(x => require(`./handlers/structures/${x}`)(client));
 
 client.login(config.ClientConfig.token);
