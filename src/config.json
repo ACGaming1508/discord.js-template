@@ -1,0 +1,33 @@
+{
+    "ClientConfig": {
+        "token": "",
+        "id": "",
+        "defaultPrefix": "$",
+        "ClientOwner": ["878556236797341786"]
+    },
+    "colors": {
+        "main": 3100415,
+        "wrong": 16711680
+    },
+    "Emotes": {
+        "correct": "<:correct:908514947804307467>",
+        "wrong": "<:wrong:911146150768291860>",
+        "mag": "<:mag:912263152719249439>",
+        "music": "<:music:911208501123121162>",
+        "loading": "<:loading:911151699983487027>",
+        "clock": "<:clock:908942766141210704>",
+        "queue": "<:queue:935888494214127676>",
+        "musicstop": "<:musicstop:911219097113591818>",
+        "rightarrow": "<:rightarrow:911213990837907456>",
+        "musicskip": "<:musicskip:940497200541233192>",
+        "pause": "<:pause:940498385738293288>",
+        "loop": "<:loop:944511874769256469>",
+        "leftarrow": "<:leftarrow:940514530134458388>",
+        "watch": "<:watch:940518648089554975>",
+        "text5": "<:text5:943303575151472641>",
+        "book": "<:book:943305635355832320>",
+        "settings": "<:settings:943308303621038080>",
+        "user": "<:user:908690341383782461>",
+        "bot": "<:bot:946234918986465300>"
+    }
+} 
