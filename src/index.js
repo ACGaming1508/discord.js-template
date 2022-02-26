@@ -9,10 +9,10 @@ const client = new Discord.Client({
 	},
 	partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
 	presence: {
-		activity: {
+		activities: [{
 			name: `${config.ClientConfig.defaultPrefix}help | ${config.ClientConfig.defaultPrefix}invite`,
 			type: 'LISTENING',
-		},
+		}],
 		status: 'online',
 	},
 	failIfNotExists: false,
