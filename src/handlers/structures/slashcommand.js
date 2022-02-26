@@ -9,7 +9,7 @@ module.exports = (client) => {
 	const SlashCommands = [];
 	fs.readdirSync('./commands').forEach(folder => {
 		if (folder !== 'Owner') {
-			const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(d => d.endsWith('.js') && typeof c.run === 'function');
+			const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(d => d.endsWith('.js') && typeof c.execute === 'function');
 			for (const file of commandFiles) {
 				const command = require(`../../commands/${folder}/${file}`);
 				client.slashCommands.set(command.data.name, command);
