@@ -6,8 +6,14 @@ module.exports = (client) => {
 		for (const file of events) {
 			const evt = require(`../../events/${dirs}/${file}`);
 			const eName = file.split('.')[0];
-			if (dirs === 'client' || dirs === 'guild') {client.on(eName, evt.bind(null, client));}
-			else {process.on(eName, evt.bind(null, client));}
+			switch (dirs) {
+				case 'client':
+					client.on(eName, evt.bind(null, client));
+				case 'guild':
+					client.on(eName, evt.bind(null, client));
+				case 'process':
+					process.on(eName, evt.bind(null, client));
+			}
 
 		}
 	};
