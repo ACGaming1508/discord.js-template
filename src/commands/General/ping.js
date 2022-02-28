@@ -6,6 +6,7 @@ module.exports = {
 		default_permission: true,
 		clientPermissions: null,
 		userPermissions: null,
+		allowEphemeral: true,
 	},
 	async execute(client, interaction) {
 		const msg = await interaction.reply({ content: 'Pinging...', fetchReply: true });
