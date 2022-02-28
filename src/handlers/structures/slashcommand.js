@@ -12,10 +12,15 @@ module.exports = (client) => {
 		for (const file of commandFiles) {
 			const command = require(`../../commands/${folder}/${file}`);
 			client.slashCommands.set(command.data.name, command);
+			const ephemeralOption = {
+		     		"type": 5,
+      				"name": "ephemeral",
+      				"description": "If the respond should be hidden (Only you can see) or not.",
+			};
 			const s = {
 				'name': command.data.name,
 				'description': command.data.description,
-				'options': command.data.options,
+				'options': command.data.options ? command.data.options.push(command.data.allowEphemeral ? ephemeralOption : null),
 				'default_permission': command.data.default_permission,
 			};
 			SlashCommands.push(s);
