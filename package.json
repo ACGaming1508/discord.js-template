@@ -1,21 +1,25 @@
 {
   "name": "template",
   "version": "1.0.0",
-  "description": "",
+  "description": "An advanced discord.js bot template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACGaming1508/discord.js-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACGaming1508/discord.js-template/issues"
+  },
+  "homepage": "https://github.com/ACGaming1508/discord.js-template#readme",
   "dependencies": {
     "@discordjs/rest": "^0.3.0",
-    "discord-api-types": "^0.27.2",
+    "discord-api-types": "^0.27.3",
     "discord.js": "^13.6.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.7.0"
   }
 }

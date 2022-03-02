@@ -20,7 +20,7 @@ module.exports = (client) => {
 			const s = {
 				'name': command.data.name,
 				'description': command.data.description,
-				'options': command.data.options ? command.data.options.push(command.data.allowEphemeral ? ephemeralOption : null),
+				'options': command.data.options ? command.data.options.push(command.data.allowEphemeral ? ephemeralOption : null) : null,
 				'default_permission': command.data.default_permission,
 			};
 			SlashCommands.push(s);
